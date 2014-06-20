@@ -30,11 +30,7 @@ public class UserRegisterController {
   public String redirect(@RequestParam("email") String email,
       @RequestParam("password") String password)
       throws EmailAddressInUseException {
-    if (newUser.checkEmailIsUnique(email) == false) {
-      throw new EmailAddressInUseException(email + " is registered");
-    } else {
-      newUser.insert(email, password);
-      return "redirect:/signin";
-    }
+    newUser.insert(email, password);
+    return "redirect:/signin";
   }
 }

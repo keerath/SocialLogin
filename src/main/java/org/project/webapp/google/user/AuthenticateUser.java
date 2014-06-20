@@ -15,7 +15,6 @@ public class AuthenticateUser {
         session.createQuery("select password from UserInfo where email=:email")
             .setParameter("email", email).list();
     session.getTransaction().commit();
-    session.close();
     if (result.get(0).toString().equals(password)) {
       return true;
     } else {
