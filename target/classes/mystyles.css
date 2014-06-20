@@ -1,0 +1,16 @@
+@CHARSET "UTF-8";
+#login
+{
+	width:35%;
+	margin-top:15%;
+	align:center;
+	margin-left:35%;
+}
+#google.btn
+{
+	margin-left:90%;
+}
+#register
+{
+	float:right;
+}

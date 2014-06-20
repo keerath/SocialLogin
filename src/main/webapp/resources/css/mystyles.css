@@ -1,0 +1,25 @@
+@CHARSET "UTF-8";
+#login
+{
+	width:35%;
+	margin-top:15%;
+	align:center;
+	margin-left:35%;
+}
+#google.btn
+{
+	margin-left:88%;
+}
+
+.form-control
+{
+	height:30px!important;
+}
+#signout
+{
+	float:right!important;
+}
+#wrongCredentials
+{
+	align:center;
+}

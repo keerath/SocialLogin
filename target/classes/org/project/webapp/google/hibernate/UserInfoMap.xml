@@ -1,0 +1,14 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="org.project.webapp.google.hibernate">
+	<class name="UserInfo" table="USER_INFO">
+	<id column="id" name="id" >
+	<generator class="increment"/>
+	</id>
+		<property name="email" column="EMAIL_ADDRESS">
+		</property>
+		<property name="password" column="password">
+		</property>
+	</class>
+</hibernate-mapping>
